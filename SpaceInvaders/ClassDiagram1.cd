@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.AlienCategory">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.AlienCategory.Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObject\Alien\AlienCategory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>GameObject\Alien\AlienCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AlienColumn">
+    <Position X="3.25" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>GameObject\Alien\AlienColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.BoxSprite">
+    <Position X="1.5" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.BoxSprite.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Sprite\BoxSprite.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAQAAAACQAgAhABAAAAAgAAAEAAEQAAAARBoQABAJAA=</HashCode>
+      <FileName>Sprite\BoxSprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Bomb">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIQAAAAAAAAABAAACAAABAAABAAAAAAAIgAAAEAAAAA=</HashCode>
+      <FileName>GameObject\Bomb\Bomb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.BombCategory">
+    <Position X="13.75" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.BombCategory.Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObject\Bomb\BombCategory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObject\Bomb\BombCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Manager">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACEAIEAAEAAAACAAQAACAAAQAgIAhAgABAAACAACAg=</HashCode>
+      <FileName>Manager\Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.DLink">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAAABBAAg=</HashCode>
+      <FileName>Manager\DLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
