@@ -29,6 +29,7 @@ namespace SpaceInvaders
             TextureMan.Create(1, 1);
             TextureMan.Add(Texture.Name.Aliens, "Aliens.tga");
             TextureMan.Add(Texture.Name.Birds, "Birds_N_Shield.tga");
+            TextureMan.Add(Texture.Name.Birds2, "Birds_N_Shield.tga");
 
             //---------------------------------------------------------------------------------------------------------
             // Sounds

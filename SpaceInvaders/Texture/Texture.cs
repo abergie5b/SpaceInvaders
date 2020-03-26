@@ -7,6 +7,7 @@ namespace SpaceInvaders
         {
             Default,
             Birds,
+            Birds2,
             Aliens,
             Juggling,
             Consolas20pt,

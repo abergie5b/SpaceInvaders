@@ -8,10 +8,12 @@ namespace SpaceInvaders
         {
             this.Initialize();
         }
+
         public ScenePlay(int nNumPlayers)
         {
             this.Initialize();
         }
+
         public override void Handle()
         {
 
@@ -35,7 +37,7 @@ namespace SpaceInvaders
             ImageMan.Add(Image.Name.UFO, Texture.Name.Aliens, new Azul.Rect(120, 489, 98, 49));
 
             ImageMan.Add(Image.Name.Missile, Texture.Name.Aliens, new Azul.Rect(267, 501, 9, 34));
-            ImageMan.Add(Image.Name.Ship, Texture.Name.Birds, new Azul.Rect(10, 93, 30, 18));
+            ImageMan.Add(Image.Name.Ship, Texture.Name.Birds2, new Azul.Rect(9, 92, 31, 19));
 
             ImageMan.Add(Image.Name.Wall, Texture.Name.Birds, new Azul.Rect(40, 185, 20, 10));
             ImageMan.Add(Image.Name.WallBottom, Texture.Name.Birds, new Azul.Rect(40, 185, 20, 1));
@@ -63,8 +65,8 @@ namespace SpaceInvaders
             GameSpriteMan.Add(GameSprite.Name.Explosion, Image.Name.Explosion, 120, 489, 30, 20);
 
             GameSpriteMan.Add(GameSprite.Name.Missile, Image.Name.Missile, -100, -100, 3, 12);
-            GameSpriteMan.Add(GameSprite.Name.Ship, Image.Name.Ship, 500, 100, 60, 20);
-            GameSpriteMan.Add(GameSprite.Name.ShipInactive, Image.Name.Ship, 500, 100, 60, 20);
+            GameSpriteMan.Add(GameSprite.Name.Ship, Image.Name.Ship, 500, 100, 50, 20);
+            GameSpriteMan.Add(GameSprite.Name.ShipInactive, Image.Name.Ship, 500, 100, 50, 20);
             GameSpriteMan.Add(GameSprite.Name.Wall, Image.Name.Wall, 448, 900, 850, 30);
             GameSpriteMan.Add(GameSprite.Name.WallBottom, Image.Name.WallBottom, 448, 900, 850, 1);
 
@@ -331,7 +333,7 @@ namespace SpaceInvaders
             pScenePlaySound.Attach(Sound.Name.Invader2);
             pScenePlaySound.Attach(Sound.Name.Invader3);
             pScenePlaySound.Attach(Sound.Name.Invader4);
-            TimerMan.Add(TimeEvent.Name.ScenePlaySound, pScenePlaySound, 1.0f);
+            TimerMan.Add(TimeEvent.Name.ScenePlaySound, pScenePlaySound, 1.5f);
 
             //---------------------------------------------------------------------------------------------------------
             // UFO

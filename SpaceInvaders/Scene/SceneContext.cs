@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace SpaceInvaders
 {
     public class SceneContext

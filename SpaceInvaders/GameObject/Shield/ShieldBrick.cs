@@ -24,7 +24,6 @@ namespace SpaceInvaders
 
         public override void VisitMissile(Missile m)
         {
-            SoundMan.PlaySound(Sound.Name.Explode);
             ColPair pColPair = ColPairMan.GetActiveColPair();
             pColPair.SetCollision(m, this);
             pColPair.NotifyListeners();
@@ -32,16 +31,16 @@ namespace SpaceInvaders
 
         public override void VisitBomb(Bomb b)
         {
-            SoundMan.PlaySound(Sound.Name.Explode);
             ColPair pColPair = ColPairMan.GetActiveColPair();
             pColPair.SetCollision(b, this);
             pColPair.NotifyListeners();
         }
 
-        public override void VisitGrid(AlienGrid m)
+        public override void VisitGrid(AlienGrid g)
         {
-            GameObject pGameObj = (GameObject)Iterator.GetChild(this);
-            ColPair.Collide(m, pGameObj);
+            ColPair pColPair = ColPairMan.GetActiveColPair();
+            pColPair.SetCollision(g, this);
+            pColPair.NotifyListeners();
         }
 
         public override void VisitMissileGroup(MissileGroup m)

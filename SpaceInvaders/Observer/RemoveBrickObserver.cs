@@ -7,16 +7,20 @@ namespace SpaceInvaders
         public RemoveBrickObserver()
         {
             this.pBrick = null;
+            this.pObjA = null;
         }
+
         public RemoveBrickObserver(RemoveBrickObserver b)
         {
             Debug.Assert(b != null);
             this.pBrick = b.pBrick;
+            this.pObjA = b.pObjA;
         }
         
         public override void Notify()
         {
 
+            this.pObjA = this.pSubject.pObjA;
             this.pBrick = (ShieldBrick)this.pSubject.pObjB;
             Debug.Assert(this.pBrick != null);
 
@@ -28,12 +32,16 @@ namespace SpaceInvaders
                 DelayedObjectMan.Attach(pObserver);
             }
         }
+
         public override void Execute()
         {
             GameObject pA = (GameObject)this.pBrick;
             GameObject pB = (GameObject)Iterator.GetParent(pA);
 
             pA.Remove();
+
+            if (!(this.pObjA is AlienGrid))
+                SoundMan.PlaySound(Sound.Name.Explode);
 
             if (privCheckParent(pB) == true)
             {
@@ -42,11 +50,11 @@ namespace SpaceInvaders
 
                 if (privCheckParent(pC) == true)
                 {
-                    //        pC.Remove();
+                    //pC.Remove();
                 }
-
             }
         }
+
         private bool privCheckParent(GameObject pObj)
         {
             GameObject pGameObj = (GameObject)Iterator.GetChild(pObj);
@@ -63,6 +71,7 @@ namespace SpaceInvaders
         // -------------------------------------------
 
         private GameObject pBrick;
+        private GameObject pObjA;
     }
 }
 
